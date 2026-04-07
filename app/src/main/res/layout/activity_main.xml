@@ -7,13 +7,130 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="20dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:gravity="left"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:padding="15dp"
+                    android:text="@string/millimeters" />
+
+                <TextView
+                    android:id="@+id/text_view_millimeters"
+                    android:layout_width="160dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/millimeters" />
+
+                <EditText
+                    android:id="@+id/edit_text_millimeters"
+                    android:layout_width="160dp"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/millimeters"
+                    android:inputType="number" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:padding="15dp"
+                    android:text="@string/centimeters" />
+
+                <TextView
+                    android:id="@+id/text_view_centimeters"
+                    android:layout_width="160dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/centimeters" />
+
+                <EditText
+                    android:id="@+id/edit_text_centimeters"
+                    android:layout_width="160dp"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/centimeters"
+                    android:inputType="number" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:padding="15dp"
+                    android:text="@string/decimeters" />
+
+                <TextView
+                    android:id="@+id/text_view_decimeters"
+                    android:layout_width="160dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/decimeters" />
+
+                <EditText
+                    android:id="@+id/edit_text_decimeters"
+                    android:layout_width="160dp"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/decimeters"
+                    android:inputType="number" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:padding="15dp"
+                    android:text="@string/meters" />
+
+                <TextView
+                    android:id="@+id/text_view_meters"
+                    android:layout_width="160dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/meters" />
+
+                <EditText
+                    android:id="@+id/edit_text_meters"
+                    android:layout_width="160dp"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/meters"
+                    android:inputType="number" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/button_calculate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/calculate" />
+
+        <Button
+            android:id="@+id/button_reset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/reset" />
+
+    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
